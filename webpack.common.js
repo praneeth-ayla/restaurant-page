@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -10,6 +11,7 @@ module.exports = {
             title: 'Restaurant Page',
             template: './src/index.html',
         }),
+        new CleanWebpackPlugin(),
     ],
     module: {
         rules: [
@@ -18,10 +20,21 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
+                test: /\.html$/,
+                use: ["html-loader"]
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'images',
+                        },
+                    },
+                ],
             },
         ],
     },
-
 };

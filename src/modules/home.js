@@ -1,4 +1,4 @@
-
+import homeImg from '/home/ran/repos/restaurant-page/src/imgs/homePage.jpg';
 export function homePage() {
     const homeDiv = document.createElement('div')
     homeDiv.id = 'home'
@@ -20,16 +20,15 @@ export function homePage() {
     menuBtnHome.textContent = 'Discover Menu >'
 
 
-    const rightHome = document.createElement('div')
+    const rightHome = document.createElement('img');
     rightHome.id = 'rightHome'
-    rightHome.style.backgroundImage = 'url("imgs/main-image---indian-breakfast.jpg")'
+    rightHome.src = homeImg
 
     container.appendChild(homeDiv)
     homeDiv.appendChild(leftHome)
     leftHome.appendChild(lightTextHome)
     leftHome.appendChild(textHome)
     leftHome.appendChild(menuBtnHome)
-
     homeDiv.appendChild(rightHome)
 }
 
