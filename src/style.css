@@ -75,3 +75,50 @@
 	height: 100vh;
 	background-size: cover;
 }
+
+#menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#menuIcon {
+	padding-top: 7%;
+	color: rgb(85, 117, 35);
+	font-size: x-large;
+	font-weight: bolder;
+	border-bottom: 2px solid rgb(85, 117, 35);
+}
+
+#menuSmallIcon {
+	padding: 1% 0;
+	font-size: 6vh;
+}
+
+#cardsContainer {
+	display: grid;
+	width: 90%;
+	border: 2px solid green;
+	grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+	grid-auto-rows: auto;
+	gap: 4%;
+	grid-row-gap: 4%;
+}
+
+.menuCard {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	padding-bottom: 3px;
+}
+
+.menuItems {
+	display: flex;
+	justify-content: space-between;
+}
