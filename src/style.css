@@ -81,6 +81,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 5%;
 }
 
 #menuIcon {
@@ -99,26 +100,20 @@
 #cardsContainer {
 	display: grid;
 	width: 90%;
-	border: 2px solid green;
 	grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
 	grid-auto-rows: auto;
 	gap: 4%;
 	grid-row-gap: 4%;
 }
 
-.menuCard {
+.itemTypeHeadings {
+	font-size: x-large;
+	color: green;
 	text-align: center;
 }
 
-ul {
-	list-style-type: none;
-}
-
-li {
-	padding-bottom: 3px;
-}
-
-.menuItems {
+.menuItem {
 	display: flex;
 	justify-content: space-between;
+	padding: 0 8vw;
 }
