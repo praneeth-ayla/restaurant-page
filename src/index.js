@@ -5,10 +5,21 @@ import "./style/style.css"
 import "./style/navBarStyle.css"
 import "./style/homeStyle.css"
 import "./style/menuStyle.css"
-
-const container = document.getElementById('container')
-
-
+let container = document.getElementById('container')
 navBar()
-homePage()
-// menuPage()
+homePage();
+
+
+document.body.addEventListener('click', (event) => {
+    const targetId = event.target.id;
+
+    if (targetId === 'homeBtnNavBar') {
+        container.textContent = '';
+        navBar();
+        homePage();
+    } else if (targetId === 'menuBtnNavBar') {
+        container.textContent = '';
+        navBar();
+        menuPage();
+    }
+});
