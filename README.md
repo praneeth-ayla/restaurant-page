@@ -8,7 +8,6 @@ A simple website for a restaurant with pages for home and menu. This project uti
 
 This project is a static website for a restaurant, featuring a home page and a menu page. The navigation bar allows users to switch between these pages easily. The main purpose of this project is to serve as a learning experience for working with Webpack in a web development environment.
 
-## Technologies Used
 
 ## Technologies Used
 
