@@ -1,0 +1,23 @@
+#navBar {
+	background: rgba(255, 255, 255, 0.55);
+	height: 7vh;
+	position: fixed;
+	width: 60%;
+	display: flex;
+	right: 1px;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 3px 5px 10px rgb(70, 70, 70);
+}
+
+.navBarElements {
+	color: rgb(60, 60, 60);
+	cursor: pointer;
+	font-weight: 500;
+	display: flex;
+}
+
+.svgs {
+	height: 20px;
+	padding-left: 10px;
+}

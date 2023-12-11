@@ -1,0 +1,40 @@
+#home {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	height: 100vh;
+}
+
+#leftHome {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#lightTextHome {
+	color: gray;
+}
+
+#textHome {
+	text-align: center;
+	padding-top: 5%;
+	text-shadow: 1px 1px 1px rgb(80, 80, 80);
+	font-size: 5vh;
+	padding-bottom: 4%;
+}
+
+#menuBtnHome {
+	color: white;
+	background-color: rgb(85, 117, 35);
+	padding: 5%;
+	cursor: pointer;
+	margin-top: 4%;
+	box-shadow: 3px 3px 5px rgb(70, 70, 70);
+	margin-right: 40%;
+}
+
+#rightHome {
+	float: right;
+	height: 100vh;
+	background-size: cover;
+}
