@@ -17,9 +17,13 @@ document.body.addEventListener('click', (event) => {
         container.textContent = '';
         navBar();
         homePage();
-    } else if (targetId === 'menuBtnNavBar') {
+    } else if (targetId === 'menuBtnNavBar' || targetId === 'menuBtnHome') {
         container.textContent = '';
         navBar();
         menuPage();
     }
 });
+const menuBtnHome = document.getElementById()
+menuBtnHome.addEventListener('click', (event) => {
+
+})
