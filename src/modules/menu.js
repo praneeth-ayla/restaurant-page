@@ -1,7 +1,6 @@
 
 
 export function menuPage() {
-    const container = document.getElementById('container')
     const menu = document.createElement('div')
     menu.id = 'menu'
     container.appendChild(menu)
@@ -141,7 +140,6 @@ export function menuPage() {
     createItems(itemTypes.desserts, 'Roasted Chickpeas with Jaggery', '₹99')
     createItems(itemTypes.desserts, 'Ragi Halwa:', '₹99')
 
-    console.log(itemTypes.desserts)
 
 
     const renderItems = (itemType, itemCard) => {
@@ -158,7 +156,6 @@ export function menuPage() {
             itemDiv.appendChild(itemNameDiv)
             itemDiv.appendChild(itemPriceDiv)
             itemList.appendChild(itemDiv)
-            console.log(element.itemName)
         });
         itemCard.appendChild(itemList)
     }
